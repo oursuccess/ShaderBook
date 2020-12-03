@@ -2,7 +2,7 @@
 
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "05/SimpleShader"
+Shader "ShaderBook/05/SimpleShader"
 {
     Properties
     {
