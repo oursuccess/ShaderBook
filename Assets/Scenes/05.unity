@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 1802965593}
   - component: {fileID: 1802965592}
   m_Layer: 0
-  m_Name: Shader0501
+  m_Name: SimpleShader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

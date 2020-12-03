@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Material0501
-  m_Shader: {fileID: 4800000, guid: 3be3c2594887a1b4cadf8b4cc06bcc4b, type: 3}
+  m_Name: SimpleShader
+  m_Shader: {fileID: 4800000, guid: 8d2103db2b40c4849ad39035038c78a1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -73,6 +73,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.51685685, g: 0.8018868, b: 0.056737266, a: 1}
+    - _Color: {r: 0.7169812, g: 0.29243812, b: 0.010145942, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
