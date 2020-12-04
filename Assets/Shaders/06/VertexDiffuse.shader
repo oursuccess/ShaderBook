@@ -16,7 +16,6 @@ Shader "ShaderBook/06/VertexDiffuse"
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            // make fog work
 
             #include "UnityCG.cginc"
             #include "Lighting.cginc"
