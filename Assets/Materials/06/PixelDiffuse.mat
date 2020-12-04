@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PixelDiffse
+  m_Name: PixelDiffuse
   m_Shader: {fileID: 4800000, guid: 3297b22818995424db55f16d3ab225c9, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
