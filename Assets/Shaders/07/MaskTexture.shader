@@ -46,9 +46,9 @@ Shader "ShaderBook/07/MaskTexture"
 
             struct v2f
             {
-                float3 uv : TEXCOORD0;
+                float2 uv : TEXCOORD0;
                 float3 lightDir : TEXCOORD1;
-                float2 viewDir : TEXCOORD2;
+                float3 viewDir : TEXCOORD2;
                 float4 vertex : SV_POSITION;
             };
 
@@ -59,7 +59,7 @@ Shader "ShaderBook/07/MaskTexture"
                 o.uv.xy = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
                 TANGENT_SPACE_ROTATION;
 
-                o.lightDir = mul(rotation, objSpaceLightDir(v.vertex)).xyz;
+                o.lightDir = mul(rotation, ObjSpaceLightDir(v.vertex)).xyz;
                 o.viewDir = mul(rotation, ObjSpaceViewDir(v.vertex)).xyz;
                 return o;
             }
@@ -73,7 +73,7 @@ Shader "ShaderBook/07/MaskTexture"
                 tangentNormal.xy *= _BumpScale;
                 tangentNormal.z = sqrt(1.0 - saturate(dot(tangentNormal.xy, tangentNormal.xy)));
 
-                fixed3 albedo = tex2D(_mainTex, i.uv).rgb * _Color.rgb;
+                fixed3 albedo = tex2D(_MainTex, i.uv).rgb * _Color.rgb;
                 fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz * albedo;
                 fixed3 diffuse = _LightColor0.rgb * albedo * max(0, dot(tangentNormal, tangentLightDir));
                 fixed3 halfDir = normalize(tangentLightDir + tangentViewDir);
